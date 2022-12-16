@@ -1,7 +1,5 @@
 git clone
 
-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
-
 Step 3 - Create your first repository
 Step 5 - Clone your repository
 
@@ -12,9 +10,6 @@ Replace {YOUR_PERSONAL_TOKEN} with your token from step 1
 Replace {YOUR_USERNAME} with your username from step 0 and 1
 
 Replace {YOUR_REPO} with the name of the reposotiry at the bottom of the task
-
-
-git clone https://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@github.com/toleman84/holbertonschool-simple_shell.git
 
 ---
 remove respoitory
