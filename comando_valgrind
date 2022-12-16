@@ -1,0 +1,5 @@
+gcc -g *.c
+
+valgrind -s --leak-check=full --show-leak-kinds=all --track-origins=yes ./a.out
+
+agregar ./a.out resultante de compilar con: gcc -g *.c

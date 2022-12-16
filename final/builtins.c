@@ -47,8 +47,8 @@ void _help(char **argv)
 		"Eshell - Economic Shell. \n"
 		"the following commands are available:\n"
 		"  cd     Change the workind directory.\n"
-		"  exit   Exit the shell.\n"
-		"  help   Print this help text.\n";
+		"  help   Print this help text.\n"
+		"  exit   Exit the Eshell.\n";
 	printf("%s", helptext);
 
 	(void)argv;

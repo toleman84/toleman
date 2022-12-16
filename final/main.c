@@ -23,8 +23,9 @@ int main(int ac, char **argv)
 		nchars_read = getline(&lineptr, &n, stdin);
 		if (nchars_read == -1)
 		{
-			printf("Exiting shell ...\n");
-			return (1);
+			free(lineptr); /* free del valgrind */
+			printf("Exiting Eshell ...\n");
+			return (-1);
 		}
 		lineptr_copy = malloc(sizeof(char) * nchars_read);
 		if (lineptr_copy == NULL)
@@ -32,7 +33,7 @@ int main(int ac, char **argv)
 			perror("Eshell: memory allocation error");
 			return (-1);
 		}
-		strcpy(lineptr_copy, lineptr);
+		_strcpy(lineptr_copy, lineptr);
 		token = strtok(lineptr, delim);
 		while (token != NULL)
 			num_tokens++, token = strtok(NULL, delim);
@@ -41,14 +42,13 @@ int main(int ac, char **argv)
 		token = strtok(lineptr_copy, delim);
 		for (i = 0; token != NULL; i++)
 		{
-			argv[i] = malloc(sizeof(char) * strlen(token));
-			strcpy(argv[i], token);
+			argv[i] = malloc(sizeof(char) * _strlen(token));
+			_strcpy(argv[i], token);
 			token = strtok(NULL, delim);
 		}
 		argv[i] = NULL, execmd(argv);
 	}
-	free(lineptr_copy);
-	free(lineptr);
+	free(lineptr_copy), free(lineptr);
 	return (0);
 }
 

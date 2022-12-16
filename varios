@@ -1,0 +1,105 @@
+git clone
+
+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
+
+Step 3 - Create your first repository
+Step 5 - Clone your repository
+
+	git clone https://{YOUR_PERSONAL_TOKEN}@github.com/{YOUR_USERNAME}/{YOUR_REPO}.git
+
+Replace {YOUR_PERSONAL_TOKEN} with your token from step 1
+
+Replace {YOUR_USERNAME} with your username from step 0 and 1
+
+Replace {YOUR_REPO} with the name of the reposotiry at the bottom of the task
+
+
+git clone https://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@github.com/toleman84/holbertonschool-simple_shell.git
+
+---
+remove respoitory
+
+cd <repository-name>
+find . -type f | grep -i "\.git" | xargs rm
+cd ..
+rm -rf <repository-name>
+mkdir <repository-name>
+cd <repository-name>
+git init
+
+---
+guardia para header.
+
+The typical "guard" for a header file is:
+
+myheader.h:
+
+#ifndef _MYHEADER
+#define _MYHEADER
+<do stuff>
+#endif
+
+Optionally where myheader.h is included, you can do:
+
+#ifndef _MYHEADER
+#include "myheader.h"
+#endif
+
+This is optional and basically is only to improve compile performance.
+
+---
+
+Puede ignorar este error agregando a CFLAGS en el makefile.-Wno-unused-parameter
+
+También puede convertir void a la variable dentro de la función para evitar el error de la siguiente manera:
+
+bool check(const char *word)
+{
+    (void)word;
+    return false;
+}
+---
+Puede editar el Makefile y eliminar la bandera en la línea 5. Eso significará que las advertencias del compilador seguirán siendo simplemente advertencias y no se convertirán en errores.-Werror
+---
+
+static libraries
+1 -
+
+Coloque todos los archivos (.c) relevantes en un directorio, incluido el archivo de encabezado (.h) que contiene prototipos para las entidades relevantes.
+
+Asegúrese de que el archivo de encabezado (.h) contiene las macros 
+
+#ifndef <HEADERFILE>_H
+#define <HEADERFILE>_H 
+
+en la parte superior y
+
+#endif
+
+en la parte inferior. Esto es para que el archivo de encabezado sólo se defina una vez
+en lugar de cada vez que se llama.
+
+2 - gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c *.c
+
+Compile por lotes todos los archivos fuente (.c) Utilice la opción -c para que el compilador no vincule aún los archivos de objeto, sino que cree un archivo de objeto homólogo (.o) para cada archivo de origen (.c)
+
+3 - ar -rc archivo.a *.o
+
+Archive todos los archivos de objeto (.o) en un archivo de biblioteca estática (.a). Utilice la opción de comando -r para asegurarse de que si el archivo de biblioteca (.a) ya existe, se reemplazará. La opción de comando -c debe usarse para que si el archivo no existe, se cree.
+
+4 - 
+
+Mueva el archivo de biblioteca (.a) al mismo directorio en el que reside el archivo de punto de entrada.
+
+5 -
+
+Ahora, en lugar de tener que incluir todos los nombres de archivo relevantes en el comando de compilación, solo se necesita hacer referencia al archivo de biblioteca (.a).
+
+--
+
+---
+valgrind
+gcc -g *.c
+
+valgrind -s --leak-check=full --show-leak-kinds=all --track-origins=yes ./a.out
+---

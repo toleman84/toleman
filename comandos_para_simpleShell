@@ -1,0 +1,36 @@
+access 		(man 2 access) 		access, faccessat, faccessat2 - check user's permissions for a file
+chdir 		(man 2 chdir) 		chdir, fchdir - change working directory
+close 		(man 2 close)		
+closedir 	(man 3 closedir)	
+execve 		(man 2 execve)		
+exit 		(man 3 exit)		
+_exit 		(man 2 _exit)		
+fflush 		(man 3 fflush)		forces a write of all user-space buffered for the given output or update stream
+fork 		(man 2 fork)		
+free 		(man 3 free)		
+getcwd 		(man 3 getcwd)		get current working directory
+getline 	(man 3 getline)		
+getpid 		(man 2 getpid)		
+isatty 		(man 3 isatty)		test whether a file descriptor refers to a terminal
+kill 		(man 2 kill)		
+malloc 		(man 3 malloc)		
+open 		(man 2 open)		
+opendir 	(man 3 opendir)		
+perror 		(man 3 perror)		
+printf 		(man 3 printf)		printf, fprintf, sprintf, snprintf, vprintf, vfprintf, vsprintf, vsnprintf -formatted output conversion
+fprintf 	(man 3 fprintf)		"
+vfprintf 	(man 3 vfprintf)	"
+sprintf 	(man 3 sprintf)		"
+putchar 	(man 3 putchar)		
+read 		(man 2 read)		
+readdir 	(man 3 readdir)		read a directory
+signal 		(man 2 signal)		
+stat (__xstat) 	(man 2 stat)		get file status
+lstat (__lxstat) (man 2 lstat)		
+fstat (__fxstat) (man 2 fstat)		
+strtok 		(man 3 strtok)		
+wait 		(man 2 wait)		
+waitpid 	(man 2 waitpid)		
+wait3 		(man 2 wait3)		wait3, wait4 - wait for process to change state, BSD style
+wait4 		(man 2 wait4)		"
+write 		(man 2 write)		

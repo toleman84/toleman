@@ -1,8 +1,6 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-#define RL_BUFSIZE 1024
-
 #include <errno.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -14,6 +12,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+/* prototypes */
+
 int main(int ac, char **argv);
 void execmd(char **argv);
 char *get_location(char *command);
@@ -24,6 +24,7 @@ void execute(char **argv);
 void __exit(char **argv);
 void _cd(char **argv);
 void _help(char **argv);
+void builtin_builtins(char **argv);
 int num_builtins(void);
 
 /* our functions */
@@ -33,5 +34,20 @@ char *_strdup(char *str);
 char *_strcpy(char *dest, char *src);
 char *_strcat(char *dest, char *src);
 unsigned int _strlen(char *s);
+
+extern char** environ;
+
+/**
+ * builtin - structure for built-in functions
+ * @name: first member.
+ * @func: second member.
+ *
+ */
+
+struct builtin
+{
+	char *name;
+	void (*func)(char **argv);
+};
 
 #endif
