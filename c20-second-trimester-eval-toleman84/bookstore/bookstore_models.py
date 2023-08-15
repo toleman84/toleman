@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from bookstore import Book
+from bookstore_management import Book
 
 
 class Fiction(Book):
