@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from bookstore_management import Book
+import json
 
 
 class Fiction(Book):
@@ -15,8 +16,9 @@ class Fiction(Book):
 
 class NonFiction(Book):
     """doc"""
-    def __init__(self, subject):
+    def __init__(self, title, author, price, subject):
         """doc"""
+        super().__init__(title, author, price)
         self.subject = subject
 
     def __str__(self):
@@ -25,8 +27,9 @@ class NonFiction(Book):
 
 class Textbook(Book):
     """doc"""
-    def __init__(self, course_name):
+    def __init__(self, title, author, price, course_name):
         """doc"""
+        super().__init__(title, author, price)
         self.course_name = course_name
 
     def __str__(self):
