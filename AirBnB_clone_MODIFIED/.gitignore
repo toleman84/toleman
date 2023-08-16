@@ -1,0 +1,18 @@
+# 
+
+# Tmp files
+*~
+
+# Pycache files
+*__pycache__*
+
+# .pyc files
+*.pyc
+
+#created file from running console
+file.json
+
+# files of mains
+main_delete.py
+test_params_create
+main_place_amenities.py
