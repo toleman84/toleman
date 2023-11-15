@@ -1,0 +1,37 @@
+Deployment:
+
+libro. Cuando terminas de escribirlo, ¿qué haces?
+Lo publicas, editorial se encarga de imprimirlo y distribuirlo. 
+
+proceso importante código llegue de la manera más eficiente y eficaz
+
+muchos factores a la hora de desplegar código, 
+planificación y las herramientas adecuadas
+
+¿Cómo se relaciona el deployment con la escritura de un libro?
+
+código debe estar listo para su publicación antes de que pueda ser desplegado.
+el código debe estar probado y depurado.
+estar documentado usuarios puedan entender cómo usarlo.
+
+Una vez listo, es hora de desplegarlo.
+
+__    ______    __
+__----______----__
+
+El proceso puede ser complejo, 
+pero hay muchas herramientas disponibles para ayudar a los desarrolladores a hacerlo. 
+Estas herramientas pueden ayudar a los desarrolladores a automatizar el proceso de deployment y 
+a garantizar que el código se despliegue de forma segura y eficiente.
+
+¿Cuáles son algunos de los factores que hay que tener en cuenta al desplegar código?
+
+Al desplegar código, hay que tener en cuenta una serie de factores, como:
+
+La plataforma en la que se ejecutará el código.
+Es importante elegir la plataforma y el entorno adecuados para el código.
+También es importante asegurarse de que el código cumple con las necesidades de los usuarios.
+
+En resumen, el deployment es un proceso importante que asegura que su código llegue a los usuarios 
+de la manera más eficiente y eficaz posible. Al planificar cuidadosamente el proceso 
+y utilizar las herramientas adecuadas, puede desplegar su código con éxito.
