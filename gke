@@ -1,0 +1,49 @@
+export PROJECT_ID=rentagile-888888
+
+echo $PROJECT_ID
+
+gcloud config set project $PROJECT_ID
+
+gcloud artifacts repositories create rentagile-repo \
+   --repository-format=docker \
+   --location=southamerica-east1 \
+   --description="Docker repository"
+
+git clone https://github.com/nachofen/rent_agile.git
+
+docker build -t southamerica-east1-docker.pkg.dev/${PROJECT_ID}/rentagile-repo/rentagile-app:v1 .
+
+docker images
+
+gcloud artifacts repositories add-iam-policy-binding rentagile-repo \
+    --location=southamerica-east1 \
+    --member=serviceAccount:73401162594-compute@developer.gserviceaccount.com \
+    --role="roles/artifactregistry.reader"
+
+Ejecuta tu contenedor de manera local (opcional):
+docker run --rm -p 5000:5000 southamerica-east1-docker.pkg.dev/${PROJECT_ID}/rentagile-repo/rentagile-app:v1
+Haz clic en el botón Vista previa en la Web Botón Vista previa en la Web.
+
+Envía la imagen de Docker a Artifact  Registry
+gcloud auth configure-docker southamerica-east1-docker.pkg.dev
+
+docker push southamerica-east1-docker.pkg.dev/${PROJECT_ID}/rentagile-repo/rentagile-app:v1
+
+Crea un clúster de GKE
+gcloud config set compute/region southamerica-east1
+
+gcloud container clusters create-auto rentagile-cluster
+
+Cómo implementar la aplicación de muestra en GKE:
+gcloud container clusters get-credentials rentagile-cluster --region southamerica-east1
+kubectl create deployment rentagile-app --image=southamerica-east1-docker.pkg.dev/${PROJECT_ID}/rentagile-repo/rentagile-app:v1
+kubectl scale deployment rentagile-app --replicas=3
+kubectl autoscale deployment hello-app --cpu-percent=80 --min=1 --max=5
+kubectl get pods
+
+Expón la app de muestra a la Internet:
+kubectl expose deployment rentagile-app --name=rentagile-app-service --type=LoadBalancer --port 80 --target-port 8080
+
+kubectl get service
+
+Copia la dirección EXTERNAL_IP en el portapapeles (por ejemplo, 203.0.113.0)
