@@ -20,15 +20,14 @@ __    ______    __
 __----______----__
 
 El proceso puede ser complejo, 
-pero hay muchas herramientas disponibles para ayudar a los desarrolladores a hacerlo. 
-Estas herramientas pueden ayudar a los desarrolladores a automatizar el proceso de deployment y 
+muchas herramientas disponibles
+pueden ayudar a los desarrolladores a automatizar el proceso de deployment y 
 a garantizar que el código se despliegue de forma segura y eficiente.
 
-¿Cuáles son algunos de los factores que hay que tener en cuenta al desplegar código?
+factores que hay que tener en cuenta al desplegar código
 
 Al desplegar código, hay que tener en cuenta una serie de factores, como:
 
-La plataforma en la que se ejecutará el código.
 Es importante elegir la plataforma y el entorno adecuados para el código.
 También es importante asegurarse de que el código cumple con las necesidades de los usuarios.
 
