@@ -24,27 +24,34 @@ Aquí tienes un ejemplo de cómo puedes terminar tu presentación:
 
 Deployment:
 
-Contar una historia de cómo se distribuye un nuevo libro o cómo se lanza un nuevo producto al mercado. Esto ayudará a que se entienda el concepto de deployment.
+Imagina que estás escribiendo un libro. Cuando terminas de escribirlo, ¿qué haces?
 
-imágenes para ilustrar tus puntos:
-	tecnologías utilizadas y gráfico asociativo.
-		Google Cloud Console
-		Docker
-		Kubernetes, para ayudar a automatizar y gestionar contenedores en las infraestructuras de la nube
-	una imagen de una pila de libros que representan un despliegue de código.
+Lo publicas, ¿verdad? Lo llevas a una editorial y la editorial se encarga de imprimirlo y distribuirlo. Esto es lo que se llama deployment.
 
-ejemplo de cómo puede empezar la presentación:
+El deployment es un proceso importante que asegura que nuestro código llegue a los usuarios de la manera más eficiente y eficaz posible.
 
-"Imagina que estás escribiendo un libro. Cuando terminas de escribirlo, ¿qué haces?"
+Hay muchos factores que hay que tener en cuenta a la hora de desplegar código, pero con la planificación y las herramientas adecuadas, puedes desplegar tu código con éxito.
 
-"Lo publicas, ¿verdad? Lo llevas a una editorial y la editorial se encarga de imprimirlo y distribuirlo. Esto es lo que se llama deployment."
+¿Cómo se relaciona el deployment con la escritura de un libro?
 
-explicar los conceptos más técnicos del deployment. Por ejemplo, diferentes tipos de deployment, los procesos involucrados y las herramientas que se utilizan. (gráficos)
+La escritura de un libro es un proceso creativo que requiere mucho tiempo y esfuerzo. Una vez que hayas terminado de escribir el libro, es hora de publicarlo. El proceso de publicación es similar al deployment de código.
 
-ejemplo de cómo puedes terminar tu presentación:
+Al igual que un libro, el código debe estar listo para su publicación antes de que pueda ser desplegado. Esto significa que el código debe estar probado y depurado para asegurarse de que funcione correctamente. También debe estar documentado para que los usuarios puedan entender cómo usarlo.
 
-"El deployment es un proceso importante que asegura que nuestro código llegue a los usuarios de la manera más eficiente y eficaz posible."
+Una vez que el código está listo para su publicación, es hora de desplegarlo.
 
-"Hay muchos factores que hay que tener en cuenta a la hora de desplegar código, pero con la planificación y las herramientas adecuadas, puedes desplegar tu código con éxito."
+El deployment de código es el proceso de hacer que el código esté disponible para los usuarios. Esto puede hacerse de varias maneras, como a través de un servidor web, una plataforma de alojamiento o un servicio en la nube.
+__    ______    __
+__----______----__
 
---
+El proceso de deployment de código puede ser complejo, pero hay muchas herramientas disponibles para ayudar a los desarrolladores a hacerlo. Estas herramientas pueden ayudar a los desarrolladores a automatizar el proceso de deployment y a garantizar que el código se despliegue de forma segura y eficiente.
+
+¿Cuáles son algunos de los factores que hay que tener en cuenta al desplegar código?
+
+Al desplegar código, hay que tener en cuenta una serie de factores, como:
+
+La plataforma en la que se ejecutará el código.
+Es importante elegir la plataforma y el entorno adecuados para el código.
+También es importante asegurarse de que el código cumple con las necesidades de los usuarios.
+
+En resumen, el deployment es un proceso importante que asegura que su código llegue a los usuarios de la manera más eficiente y eficaz posible. Al planificar cuidadosamente el proceso y utilizar las herramientas adecuadas, puede desplegar su código con éxito.
